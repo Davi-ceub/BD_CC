@@ -1,1 +1,16 @@
+<<<<<<< HEAD
 -- Comando SELECT 13
+=======
+Aula 3
+-- Comando SELECT
+-- Comando Update
+
+select * from medicos where codm = 3;
+
+select * from medicos where idade > 30 or especialidade = 'pediatria'; 
+
+select avg(idade) from medicos; 
+
+select distinct especialidade from medicos;
+
+select idade from medicos order by idade; 
