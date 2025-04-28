@@ -60,5 +60,47 @@ references Usuarios (id);
 alter table Reservas add constraint fk_Livros1 foreign key (id_livro)
 references Livros (id);
 
+insert into Livros (id,titulo,autor_id,ano_publicação,genero,descricao,disponibilidade,Tipo)
+values 
+(1,'O nome da Rosa', 1 , 1980, 'romance', 'investiga vários temas',2,'fisico'),
+(2,'O pêndulo de Foucault',1,1988,'romance','história real',1,'fisico'),
+(3,'O estrangeiro',2,1942,'romance','Colono Francês',0,'fisico'),
+(4,'A peste',2,1947,'romance','epidemia na Argélia',5,'digital'),
+(5,'Admiravel mundo novo',3,1932,'romance','sociedade distópica',10,'digital'),
+(6,'1984',4,1949,'romance','regime totalitario',7,'fisico'),
+(7,'A revolução dos bichos',4,1945,'fábula','critica ao stalinismo',1,'fisico'),
+(8,'Os irmãos Karamázov',5,1880,'romance','conflito entre irmãos',0,'digital'),
+(9,'Crime e castigo',5,1866,'romance','jovem estudante comete crime',24,'fisico'),
+(10,'O pequeno principe',6,1943,'literatura infantil','menino faz amizade com piloto',3,'digital'),
+(11
+(12
+(13
+(14
+(15
+(16
+(17
+(18
+(19
+(20
+(21
+(22
+(23
+(24
+(25
+(26
+(27
+(28
+(29
+(30
+(31
+(32
+(33
+(34
+(35
+(36
+(37
+(38
+(39
+(40
 
 
