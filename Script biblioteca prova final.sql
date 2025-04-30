@@ -4,7 +4,7 @@ use Biblioteca;
 create table Livros (
 id int primary key auto_increment unique,
 titulo varchar(75) not null,
-autor_id int not null references Autores(id),
+autor_id int not null,
 ano_publicacao Date not null,
 genero varchar(50) not null,
 descricao varchar(200) not null,
@@ -28,8 +28,8 @@ cpf BIGINT not null unique);
 
 create table Emprestimos (
 id int primary key auto_increment unique,
-id_usuario int not null references Usuarios(id),
-id_livro int not null references Livros(id),
+id_usuario int not null,
+id_livro int not null,
 data_emprestimo Date not null,
 data_devolucao_prevista Date not null,
 data_devolucao_real Date null,
@@ -38,8 +38,8 @@ taxa_atraso decimal(9,2) not null);
 
 create table Reservas (
 id int primary key auto_increment unique,
-id_usuario int not null references Usuarios(id),
-id_livro int not null references Livros(id),
+id_usuario int not null,
+id_livro int not null,
 data_reserva Date not null,
 status_reserva varchar(50) not null,
 lista_espera varchar(5) not null);
