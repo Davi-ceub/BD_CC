@@ -148,9 +148,9 @@ values
 
 insert into Usuarios (id,nome,email,telefone,data_cadastro,cpf)
 values
-(1,'Davi Castilho','davi.lc@sempreceub.com',61981012907,'2023-07-31','02661358110'),
-(2,'Marcelo Castilho','mfcastilho@gmail.com',61996121829,'2021-01-24','11891930869'),
-(3,'Andreia Castilho','andreianlourenco@gmail.com',61993105383,'2022-06-07','85174157953'),
+(1,'Davi Castilho','davi.lc@sempreceub.com','61981012907','2023-07-31','02661358110'),
+(2,'Marcelo Castilho','mfcastilho@gmail.com','61996121829','2021-01-24','11891930869'),
+(3,'Andreia Castilho','andreianlourenco@gmail.com','61993105383','2022-06-07','85174157953'),
 (4,'Ana Souza', 'ana.souza@email.com', '11982001001', '2021-03-15', '87251938001'),
 (5,'Bruno Lima', 'bruno.lima@email.com', '21988551002', '2022-04-20', '68123754092'),
 (6,'Camila Torres', 'camila.torres@email.com', '31993321003', '2023-05-10', '42987623145'),
