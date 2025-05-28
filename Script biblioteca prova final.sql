@@ -2,17 +2,17 @@ create database Biblioteca;
 use Biblioteca;
 
 create table Livros (
-id int primary key auto_increment unique,
+id int primary key auto_increment,
 titulo varchar(75) not null,
 autor_id int not null,
-ano_publicacao Date not null,
+ano_publicacao int not null,
 genero varchar(50) not null,
 descricao varchar(200) not null,
 disponibilidade int not null,
 Tipo varchar(7) not null); 
 
 create table Autores (
-id int primary key auto_increment unique,
+id int primary key auto_increment,
 nome varchar(100) not null,
 nacionalidade varchar(50) not null,
 data_nascimento Date not null,
@@ -27,7 +27,7 @@ data_cadastro Date not null,
 cpf BIGINT not null unique);
 
 create table Emprestimos (
-id int primary key auto_increment unique,
+id int primary key auto_increment,
 id_usuario int not null,
 id_livro int not null,
 data_emprestimo Date not null,
@@ -37,7 +37,7 @@ situacao varchar(50) not null,
 taxa_atraso decimal(9,2) not null);
 
 create table Reservas (
-id int primary key auto_increment unique,
+id int primary key auto_increment,
 id_usuario int not null,
 id_livro int not null,
 data_reserva Date not null,
@@ -60,7 +60,7 @@ references Usuarios (id);
 alter table Reservas add constraint fk_Livros1 foreign key (id_livro)
 references Livros (id);
 
-insert into Livros (id,titulo,autor_id,ano_publicação,genero,descricao,disponibilidade,Tipo)
+insert into Livros (id,titulo,autor_id,ano_publicacao,genero,descricao,disponibilidade,Tipo)
 values 
 (1,'O nome da Rosa', 1 , 1980, 'romance', 'investiga vários temas',2,'fisico'),
 (2,'O pêndulo de Foucault',1,1988,'romance','história real',1,'fisico'),
@@ -274,7 +274,3 @@ values
 (38, 33, 32, '2023-01-06', 'ativa', 'não'),
 (39, 16, 28, '2023-07-19', 'ativa', 'sim'),
 (40, 29, 37, '2024-01-22', 'concluída', 'não');
-
-
-
-
